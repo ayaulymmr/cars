@@ -12,7 +12,8 @@ public class Database implements DatabaseConnection {
     public Database(String url, String user, String password) throws SQLException {
         try {
             Class.forName("org.postgresql.Driver");
-            connection = DriverManager.getConnection(url, user, password);
+            Connection conn= DriverManager.getConnection("jdbc:postgresql:localhost:5432/Cars","postgres","13579");
+
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
             throw new SQLException("Failed to load the JDBC driver");
