@@ -1,4 +1,4 @@
-I used Spring Boot, which is a framework in Java, to create the backend. I used Persistence, Java Persistence API, and Lombok to organize databases. In general, we start with the models. In the models folder, there are classes like Car and User.
+We used Spring Boot, which is a framework in Java, to create the backend. I used Persistence, Java Persistence API, and Lombok to organize databases. In general, we start with the models. In the models folder, there are classes like Car and User.
 First, we use decorators. It adds getters and setters to the object properties. So, you don't need to specify them separately; you can call them directly. 
 After that, we create a service, which means services and interfaces for services and interfaces for repositories. With the help of the Java Persistence API, we can create a repository.
 In general, we create an interface based on it, and then we call it in the service to interact with this data storage object. That is, it includes find all, save, find, and you can also edit, and so on.
